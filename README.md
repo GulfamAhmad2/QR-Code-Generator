@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# QR Code Reader
+- In this app I have used react.js with Qr-scanner
+- it is full responsive
+
+![qr](https://user-images.githubusercontent.com/112485199/224154086-662544d4-184f-42b3-a885-7396a35092ae.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
