@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eff3ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+  background-color: #007BFF;
+  width: 350px;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.qr-image{
+  position: relative;
+  width: 100%;
+  height: 240px;
+background-color: #fff;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image{
+  width:200px;
+  height: 200px;
+}
+
+.qr-image img{
+  width:100%;
+  height: 100%;
+  object-fit: contain;
+
+/* display: none; 
+ */
+}
+
+.active.upload-icon{
+  display: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upload-icon{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+
+
+.upload-icon i{
+font-size: 25px;
+color: #007BFF;
+}
+
+.upload-span{
+  color: #007BFF;
+  font-size: 20px;
+}
+
+.qr-details{
+  margin-top:20px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  height: 100px;
+  color: #fff;
+}
+.qr-details p{
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
   color: white;
+  overflow: auto;
+
+  /* overflow: hidden; */
+
 }
 
-.App-link {
-  color: #61dafb;
+.qr-details::-webkit-scrollbar {
+  width: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+.qr-details::-webkit-scrollbar-track {
+  background: #007BFF; 
+  border-radius: 5px;
+
+}
+ 
+/* Handle */
+.qr-details::-webkit-scrollbar-thumb {
+  background: #eff3ff; 
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #; 
+} */
+
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button{
+  padding: 10px 50px;
+  font-size: 16px;
+  color: #007BFF;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+button:active{
+  transform: scale(0.95);
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
 }
